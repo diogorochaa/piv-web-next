@@ -28,13 +28,11 @@ export const metadata = {
 }
 
 export default function Home() {
-  
   return (
     <main>
       <div className="my-10">
         <Profile items={siteConfig} />
       </div>
-
     </main>
   )
 }

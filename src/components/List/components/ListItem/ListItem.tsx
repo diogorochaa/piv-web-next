@@ -5,5 +5,12 @@ type ListItemProps = LiHTMLAttributes<HTMLLIElement> & {
 }
 
 export const ListItem = ({ children, ...rest }: ListItemProps) => {
-  return <li className='text-md relative px-2 font-light transition-colors duration-200 hover:text-violet-400' {...rest}>{children}</li>
+  return (
+    <li
+      className="text-md relative px-2 font-light transition-colors duration-200 hover:text-violet-400"
+      {...rest}
+    >
+      {children}
+    </li>
+  )
 }

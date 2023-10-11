@@ -5,5 +5,9 @@ type ListProps = HTMLAttributes<HTMLUListElement> & {
 }
 
 export const List = ({ children, ...rest }: ListProps) => {
-  return <ul className='flex justify-between gap-3' {...rest}>{children}</ul>
+  return (
+    <ul className="flex justify-between gap-3" {...rest}>
+      {children}
+    </ul>
+  )
 }

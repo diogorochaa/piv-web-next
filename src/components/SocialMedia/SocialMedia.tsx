@@ -12,9 +12,9 @@ export const SocialMedia = ({ items }: SocialMediaProps) => {
     <List className="flex-col">
       {items.map((item) => (
         <ListItem key={item.title}>
-          <Link className='flex items-center' href={item.href}>
+          <Link className="flex items-center" href={item.href}>
             {item?.icon}
-            <p className='ml-1'>{item.title}</p>
+            <p className="ml-1">{item.title}</p>
           </Link>
         </ListItem>
       ))}
