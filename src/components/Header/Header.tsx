@@ -1,7 +1,5 @@
-import { mainNavConfig } from '@/config'
-
 import { Logo } from '@/components/Logo'
-import { MainNav } from '@/components/MainNav'
+
 import { Actions } from './Actions/Actions'
 
 export const Header = () => {
@@ -10,7 +8,6 @@ export const Header = () => {
       <div className="flex h-full w-full items-center justify-between px-4">
         <Logo />
 
-        <MainNav items={mainNavConfig.mainNav} />
         <Actions />
       </div>
     </header>

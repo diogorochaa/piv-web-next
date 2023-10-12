@@ -21,4 +21,5 @@ export {
   InstagramLogo as InstagramIcon,
   TwitterLogo as TwitterIcon,
   GithubLogo as GithubIcon,
+  GoogleLogo as GoogleIcon,
 } from '@phosphor-icons/react'

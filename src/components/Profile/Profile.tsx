@@ -18,10 +18,10 @@ export const Profile = ({ items }: ProfileProps) => {
         priority
       />
 
-      <h1 className=" my-3 text-4xl bg-clip-text font-bold text-transparent bg-gradient-to-r from-purple-900 via-purple-600 to-violet-600">
+      <h1 className=" my-3 text-8xl bg-clip-text font-bold text-transparent bg-gradient-to-r from-purple-900 via-purple-600 to-violet-600">
         {items.title}
       </h1>
-      <p className="text-md">{items.subtitle}</p>
+      <p className="text-2xl">{items.subtitle}</p>
     </div>
   )
 }

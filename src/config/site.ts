@@ -3,9 +3,9 @@ import { SiteType } from '@/models'
 export const siteConfig: SiteType = {
   name: 'Piv | Web',
   description: 'Site desenvolvido para o meu tcc',
-  title: 'Plataforma Investidora em Vidas.',
+  title: 'Psico Match.',
   subtitle:
-    'Bem vindo ao Piv! Aqui você pode investir em vidas e receber um retorno impagável.',
+    'Bem vindo ao Psico Match! Aqui você pode investir em vidas e receber um retorno impagável.',
   url: 'https://meusite.com.br',
   links: {
     instagram: 'https://www.instagram.com/diogodev_/',
