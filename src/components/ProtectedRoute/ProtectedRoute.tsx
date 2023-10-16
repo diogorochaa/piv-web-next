@@ -17,9 +17,5 @@ export function ProtectedRoute({ children }: ProtectedRouteProps) {
     return null
   }
 
-  return (
-    <div className="flex flex-col items-center justify-center h-full">
-      {children}
-    </div>
-  )
+  return <div>{children}</div>
 }
