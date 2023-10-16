@@ -3,10 +3,9 @@
 import { signIn, signOut, useSession } from 'next-auth/react'
 
 import { Button } from '@/components/Button'
-import { ArrowRightIcon, GoogleIcon } from '@/components/Icons'
+import { GoogleIcon, SignOutIcon } from '@/components/Icons'
 import { MainNav } from '@/components/MainNav'
 import { mainNavConfig } from '@/config'
-import Image from 'next/image'
 
 export const Actions = () => {
   const { data: session } = useSession()
@@ -18,15 +17,8 @@ export const Actions = () => {
           <MainNav items={mainNavConfig.mainNav} />
           <Button.Root onClick={() => signOut()}>
             <Button.Content text="Sair" />
-            <Button.Icon icon={ArrowRightIcon} />
+            <Button.Icon icon={SignOutIcon} />
           </Button.Root>
-          <Image
-            className="rounded-full"
-            src={`${session?.user?.image}`}
-            alt="profile image"
-            width={50}
-            height={50}
-          />
         </>
       ) : (
         <Button.Root onClick={() => signIn('google')}>

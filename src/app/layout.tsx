@@ -25,7 +25,6 @@ export default function RootLayout({
       <body className="bg-gray-100 text-zinc-900">
         <Provider>
           <Header />
-
           <Layout>
             <div className="py-20">{children}</div>
           </Layout>

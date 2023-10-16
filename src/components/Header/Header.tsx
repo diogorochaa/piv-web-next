@@ -1,6 +1,7 @@
 import { Logo } from '@/components/Logo'
 
 import { Actions } from './Actions/Actions'
+import { Profile } from './Profile/Profile'
 
 export const Header = () => {
   return (
@@ -9,6 +10,7 @@ export const Header = () => {
         <Logo />
 
         <Actions />
+        <Profile />
       </div>
     </header>
   )

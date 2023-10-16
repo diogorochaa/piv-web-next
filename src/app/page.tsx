@@ -1,6 +1,7 @@
 import { siteConfig } from '@/config'
 
 import { Profile } from '@/components/Profile'
+import { ProtectedRoute } from '@/components/ProtectedRoute/ProtectedRoute'
 
 export const metadata = {
   title: siteConfig.name,
@@ -29,10 +30,12 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main>
-      <div className="my-10">
-        <Profile items={siteConfig} />
-      </div>
-    </main>
+    <ProtectedRoute>
+      <main>
+        <div className="my-10">
+          <Profile items={siteConfig} />
+        </div>
+      </main>
+    </ProtectedRoute>
   )
 }

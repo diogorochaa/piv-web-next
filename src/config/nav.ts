@@ -3,15 +3,15 @@ import { MainNavType } from '@/models'
 export const mainNavConfig: MainNavType = {
   mainNav: [
     {
-      title: 'Home',
+      title: 'Início',
       href: '/',
     },
     {
-      title: 'Artigos',
-      href: '/articles',
+      title: 'Unidades',
+      href: '/units',
     },
     {
-      title: 'Sobre mim',
+      title: 'Sobre',
       href: '/about',
     },
   ],

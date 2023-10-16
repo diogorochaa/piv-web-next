@@ -4,6 +4,7 @@ export {
   // General
   X as CloseIcon,
   List as OpenIcon,
+  SignOut as SignOutIcon,
 
   // Arrows
   ArrowLeft as ArrowLeftIcon,
