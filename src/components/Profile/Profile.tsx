@@ -1,5 +1,6 @@
 import { SiteType } from '@/models'
 import Image from 'next/image'
+import { Actions } from './Actions/Actions'
 
 type ProfileProps = {
   items: SiteType
@@ -7,7 +8,7 @@ type ProfileProps = {
 
 export const Profile = ({ items }: ProfileProps) => {
   return (
-    <div>
+    <div className="flex flex-col gap-4">
       <Image
         className="rounded-full"
         src="/assets/images/logo.png"
@@ -22,6 +23,7 @@ export const Profile = ({ items }: ProfileProps) => {
         {items.title}
       </h1>
       <p className="text-2xl">{items.subtitle}</p>
+      <Actions />
     </div>
   )
 }
