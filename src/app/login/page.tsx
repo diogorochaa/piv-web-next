@@ -1,11 +1,8 @@
-import { Profile } from '@/components/Profile'
-import { siteConfig } from '@/config'
-
 export default function Login() {
   return (
     <main>
       <div className="my-10">
-        <Profile items={siteConfig} />
+        <h1>Login</h1>
       </div>
     </main>
   )

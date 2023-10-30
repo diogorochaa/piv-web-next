@@ -5,6 +5,7 @@ export {
   X as CloseIcon,
   List as OpenIcon,
   SignOut as SignOutIcon,
+  SignIn as SignInIcon,
 
   // Arrows
   ArrowLeft as ArrowLeftIcon,
