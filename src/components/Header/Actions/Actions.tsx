@@ -1,23 +1,30 @@
 'use client'
 
 import { Button } from '@/components/Button'
-import { SignInIcon } from '@/components/Icons'
-import { useRouter } from 'next/navigation'
+import { GoogleIcon, SignOutIcon } from '@/components/Icons'
+import { MainNav } from '@/components/MainNav'
+import { mainNavConfig } from '@/config'
+import { signIn, signOut, useSession } from 'next-auth/react'
 
 export const Actions = () => {
-  const router = useRouter()
-  const handleLogin = () => {
-    router.push('/login')
-  }
+  const { data: session } = useSession()
 
   return (
     <div className="flex items-center gap-2">
-      <>
-        <Button.Root onClick={handleLogin}>
-          <Button.Content text="Entrar" />
-          <Button.Icon icon={SignInIcon} />
+      {session ? (
+        <>
+          <MainNav items={mainNavConfig.mainNav} />
+          <Button.Root onClick={() => signOut()}>
+            <Button.Content text="Sair" />
+            <Button.Icon icon={SignOutIcon} />
+          </Button.Root>
+        </>
+      ) : (
+        <Button.Root onClick={() => signIn('google')}>
+          <Button.Content text="Entrar com Google" />
+          <Button.Icon icon={GoogleIcon} />
         </Button.Root>
-      </>
+      )}
     </div>
   )
 }
